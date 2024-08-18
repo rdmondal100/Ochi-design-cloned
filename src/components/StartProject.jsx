@@ -82,30 +82,27 @@ const StartProject = () => {
 		};
 	}, []);
 
-	// const [marginBottom, setMarginBottom] = useState(0);
+	const [marginBottom, setMarginBottom] = useState(0);
 
 	const eyeElement = useRef();
 
-	// useEffect(() => {
-	// 	const handleScroll = () => {
-	// 		const rect = eyeElement.current.getBoundingClientRect();
-	// 		console.log(rect);
-	// 		console.log(rect.height - rect.top);
-	// 		console.log(rect.height > rect.top);
+	useEffect(() => {
+		const handleScroll = () => {
+			const rect = eyeElement.current.getBoundingClientRect();
+			console.log(rect);
+			console.log(rect.height - rect.top);
+			console.log(rect.height > rect.top);
 
-	// 		if (rect.height > rect.top) {
-	// 			setMarginBottom((rect.height - rect.top) * 0.4);
-	// 		}
-	// 	};
-	// 	window.addEventListener("scroll", handleScroll);
-	// }, []);
+			if (rect.height > rect.top) {
+				setMarginBottom((rect.height - rect.top) * 0.4);
+			}
+		};
+		window.addEventListener("scroll", handleScroll);
+	}, []);
 
 	return (
 		<div
 
-		data-scroll
-		data-scroll-section
-		data-scroll-speed='.8'
 			className=' relative h-full min-h-screen w-full bg-[#CDEA68]  py-1 md:py-10 rounded-t-lg  flex flex-col justify-evenly  '
 			ref={eyeElement}
 		>
@@ -118,7 +115,7 @@ const StartProject = () => {
 			<div className='eye relative '>
 				<div
 					className=' absolute  left-1/2 -translate-x-1/2 bottom-0 flex justify-center gap-6 translate-y-[200%] transition-all duration-0 ease-linear '
-					// style={{ marginBottom: `${marginBottom}px` }}
+					style={{ marginBottom: `${marginBottom}px` }}
 				>
 					<div className='lefteye md:w-48 md:h-48 w-32 h-32 rounded-full bg-[#F4F4F4] flex justify-center items-center relative '>
 						<div

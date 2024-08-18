@@ -1,17 +1,15 @@
-import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
+import {
+	motion,
+	useMotionValueEvent,
+	useScroll,
+	useTransform,
+} from "framer-motion";
 import { cuppleImg } from "../assets";
 import { useRef } from "react";
 
 const About = () => {
-
-	
-	
 	return (
-		<div
-			className=' container w-full bg-[#CDEA68]  rounded-t-xl  text-black  box-border  py-12 px-3  '
-		
-			
-		>
+		<div className=' section_container w-full bg-[#CDEA68]  rounded-t-xl  text-black  box-border  py-12 px-3  '>
 			<h1 className=' font-small-font text-[4.5vw] p-[2vw] leading-[5vw] text-left relative'>
 				Ochi is a strategic partner for fast-grow­ing tech businesses
 				that need to raise funds, sell prod­ucts, ex­plain com­plex
@@ -72,8 +70,6 @@ const About = () => {
 				</div>
 			</div>
 		</div>
-
-	
 	);
 };
 

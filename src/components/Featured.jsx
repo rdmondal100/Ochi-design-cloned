@@ -6,10 +6,7 @@ const Featured = () => {
 	const { projectsToShow, showMore, setShowMore } = useFeaturedProjects();
 
 	return (
-		<div
-
-			className=' container relative w-full py-10   bg-[#F1F1F1]  rounded-t-xl  '
-		>
+		<div className=' section_container relative w-full py-10   bg-[#F1F1F1]  rounded-t-xl  '>
 			<div className='w-full border-b-[1.5px] pb-10 border-[#B2B2B2] '>
 				<h1 className=' xl:text-5xl md:text-4xl text-[2rem] font-small-font px-5 '>
 					Featured projects

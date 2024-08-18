@@ -14,8 +14,8 @@ const App = () => {
 
 
 	return (
-	
-		<SmoothScroller>  
+		<SmoothScroller>
+
 			<NavBar />
 			<section>
 				<Landing />
@@ -38,8 +38,8 @@ const App = () => {
 			<section>
 				<Footer />
 			</section>
-			</SmoothScroller>
 
+		</SmoothScroller>
 	);
 };
 

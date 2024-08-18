@@ -83,16 +83,9 @@ const Eyes = () => {
 		};
 	}, []);
 
-
 	return (
-		<div
-			className=' container relative w-full   overflow-hidden cursor-pointer flex justify-center items-center rounded-t-xl z  '
-		
-		>
-			<div
-				
-				className='lg:w-full   bg-center relative '
-			>
+		<div className=' section_container relative w-full   overflow-hidden cursor-pointer flex justify-center items-center rounded-t-xl z  '>
+			<div className='lg:w-full   bg-center relative '>
 				<img src={eye} alt='' className=' w-full  ' />
 
 				<div className='absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex justify-center gap-6'>

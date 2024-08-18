@@ -44,7 +44,7 @@ const FeaturedCard = ({ projects }) => {
 						</h2>
 					</a>
 
-					<div className='btnTextContainer flex flex-wrap mt-5 gap-3 items-start'>
+					<div className='btnTextsection_container flex flex-wrap mt-5 gap-3 items-start'>
 						{project?.btnText.map((text, index) => (
 							<div className=' ' key={index}>
 								<a
