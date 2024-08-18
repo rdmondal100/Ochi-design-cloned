@@ -1,0 +1,40 @@
+
+
+
+@font-face {
+  font-family: 'ft-small';
+  src: url('./fonts/NeueMontreal-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'ft-bold';
+  src: url('./fonts/FoundersGrotesk-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ft-moon';
+  src: url('./fonts/icomoon.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: black;
+  box-sizing: border-box;
+  
+}
+
+.navAnimation{
+  @apply translate-y-[-100%] 
+
+}
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+
