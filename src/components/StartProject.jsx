@@ -89,9 +89,9 @@ const StartProject = () => {
 	useEffect(() => {
 		const handleScroll = () => {
 			const rect = eyeElement.current.getBoundingClientRect();
-			console.log(rect);
-			console.log(rect.height - rect.top);
-			console.log(rect.height > rect.top);
+			// console.log(rect);
+			// console.log(rect.height - rect.top);
+			// console.log(rect.height > rect.top);
 
 			if (rect.height > rect.top) {
 				setMarginBottom((rect.height - rect.top) * 0.4);
@@ -102,7 +102,7 @@ const StartProject = () => {
 
 	return (
 		<div
-
+  data-scroll data-scroll-speed=".5"
 			className=' relative h-full min-h-screen w-full bg-[#CDEA68]  py-1 md:py-10 rounded-t-lg  flex flex-col justify-evenly  '
 			ref={eyeElement}
 		>

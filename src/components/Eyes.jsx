@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { eye } from "../assets";
 
+
 const Eyes = () => {
 	const [leftRotation, setLeftRotation] = useState(0);
 	const [rightRotation, setRightRotation] = useState(0);
@@ -14,6 +15,7 @@ const Eyes = () => {
 
 	const rightEyeLine = useRef();
 	const rightEyeBall = useRef();
+
 
 	useEffect(() => {
 		const handleMouseMove = (e) => {
@@ -83,12 +85,38 @@ const Eyes = () => {
 		};
 	}, []);
 
-	return (
-		<div className=' section_container relative w-full   overflow-hidden cursor-pointer flex justify-center items-center rounded-t-xl z  '>
-			<div className='lg:w-full   bg-center relative '>
-				<img src={eye} alt='' className=' w-full  ' />
 
-				<div className='absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex justify-center gap-6'>
+
+	const [marginBottom, setMarginBottom] = useState(0);
+
+	const eyeElement = useRef();
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const eyerect = eyeElement.current.getBoundingClientRect();
+			// console.log(eyerect);
+			// console.log(eyerect.height - eyerect.top);
+			// console.log(eyerect.height > eyerect.top);
+
+			if (eyerect.height > eyerect.top) {
+				setMarginBottom((eyerect.height - eyerect.top) );
+			}
+		};
+
+		
+		window.addEventListener("scroll", handleScroll);
+	}, []);
+	
+	// console.log(marginBottom)
+	return (
+		<div    data-scroll data-scroll-speed="-.5"    className=' section_container relative w-full   overflow-hidden cursor-pointer flex justify-center items-center rounded-t-xl   '>
+			<div   className='lg:w-full h-full   bg-center relative flex flex-col justify-center items-center '>
+
+				<img ref={eyeElement}  src={eye} alt='' className=' w-full  ' />
+
+				<div className="relative ">
+
+				<div  className='absolute  left-1/2 -translate-x-1/2 bottom-0 flex justify-center gap-6 sm:translate-y-[150%] lg:translate-y-[250%] xl:translate-y-[300%] transition-all duration-0 ease-linear ' 	style={{ marginBottom: `${marginBottom}px` }}>
 					<div className='lefteye md:w-48 md:h-48 w-32 h-32 rounded-full bg-[#F4F4F4] flex justify-center items-center relative '>
 						<div
 							className='leftball  md:w-28 md:h-28 w-20 h-20  rounded-full bg-[#212121] relative flex justify-center items-center transition-transform  ease-linear'
@@ -134,6 +162,8 @@ const Eyes = () => {
 							Play
 						</div>
 					</div>
+				</div>
+
 				</div>
 			</div>
 		</div>

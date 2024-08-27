@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className=' section_container relative h-screen rounded-t-xl   bg-[#F1F1F1] z-50 w-full   pt-16 -mt-2 md:px-5 '>
+		<footer  className=' section_container relative h-screen rounded-t-xl   bg-[#F1F1F1] z-50 w-full   pt-16 -mt-2 md:px-5 '>
 			<div className='top flex flex-col sm:flex-row  '>
 				<div className='left textstructure md:w-1/2  sm:px-6 px-4'>
 					<div className='masker'>
