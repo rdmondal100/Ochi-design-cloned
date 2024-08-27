@@ -136,7 +136,7 @@ const NavBar = () => {
 					</ul>
 				</div>
 
-				<div className=' cursor-pointer toggle-container absolute  w-full h-20 flex justify-end items-start right-5 top-3 z-[99999] '>
+				<div className=' cursor-pointer toggle-container absolute  w-full h-20 flex justify-end items-start right-5 top-3 z-[99999] md:hidden'>
         <div ref={toggle} onClick={()=>setIsOpen(!isOpen)} className="toggle px-2  flex  flex-col justify-center items-center gap-3 py-2">
 				<span ref={topLine} className=' w-9 h-[1.6px]  relative inline-block bg-slate-200 '></span>
 				<span ref={bottomLine} className=' w-9 h-[1.6px]  relative bg-slate-200  '></span>

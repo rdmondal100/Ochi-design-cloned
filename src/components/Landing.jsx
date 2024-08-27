@@ -6,7 +6,7 @@ const Landing = () => {
 	return (
 		<>
 			<div className=' section_container relative  bg-[#F1F1F1] h-[99vh] sm:h-[80vh] lg:h-screen lg:mb-2 '>
-				<div className=' w-full pt-1 h-[90vh]  box-border '>
+				<div className=' w-full pt-1 h-[90vh] lg:h-screen  box-border '>
 					<div className='textstructure mt-40 md:mt-20 md:px-14 sm:px-6 px-4'>
 						{["we creat", "eye-opening", "presentations"].map(
 							(item, index) => {

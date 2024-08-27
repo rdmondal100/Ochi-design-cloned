@@ -7,7 +7,7 @@ const Marquee = () => {
 	return (
 		<div
 		
-			className='  w-full  rounded-t-xl bg-[#004D43] pb-20 py-16  overflow-hidden box-border -mt-2 '
+			className='  w-full  rounded-t-xl bg-[#004D43] pb-20 py-16  overflow-hidden box-border -mt-2  lg:translate-y-[60%] xl:translate-y-[47%]  '
 		>
 			<div
 				className='text flex 
