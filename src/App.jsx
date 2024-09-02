@@ -59,7 +59,7 @@ const App = () => {
 			<section data-scroll data-scroll-speed="0.1" className=" relative z-[3]">
 				<About />
 			</section>
-			<section    className=" relative z-[2] w-full h-screen justify-center items-center md:mb-60">
+			<section    className=" relative z-[2] w-full md:h-screen justify-center items-center md:mb-60">
 				<Eyes />
 			</section>
 			<section  data-scroll data-scroll-speed="-0.3" className=" z-[3] relative">
