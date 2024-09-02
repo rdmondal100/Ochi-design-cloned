@@ -104,7 +104,7 @@ const NavBar = () => {
 				ref={navigation}
 				className={`w-full px-6 py-2 grid-cols-12  items-center fixed z-[9999] transition-all duration-500 backdrop-blur-[3px]  grid  ${isOpen? "":"bg-[#F1F1F1]/10"}`}
 			>
-				<div className={` col-span-6 logo flex font-moon-font bold-font px-1 text-4xl font-semibold  ${isOpen? " text-slate-200":" text-gray-800"} `}>
+				<div className={` col-span-6 logo flex font-moon-font bold-font px-1 text-4xl font-semibold  ${isOpen? " text-slate-200":" text-gray-800"} -ml-4 `}>
 					ochi
 				</div>
 				<div className='hidden md:flex col-span-6  links pr-1'>
